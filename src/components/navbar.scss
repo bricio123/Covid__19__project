@@ -1,0 +1,27 @@
+@import "../variables";
+
+.icons_bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: right;
+  cursor: pointer;
+ 
+}
+.icons_bar #um {
+  border-bottom: 3px solid var(--color-white);
+  width: 10px;
+  height: 10px;
+  transform: translateX(1.2rem);
+}
+
+.icons_bar #dois {
+  border-bottom: 3px solid var(--color-white);
+  width: 30px;
+  height: 10px;
+}
+.icons_bar #tres {
+  border-bottom: 3px solid var(--color-white);
+  width: 10px;
+  height: 10px;
+}

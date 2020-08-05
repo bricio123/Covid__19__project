@@ -1,0 +1,55 @@
+@import '../variables';
+
+.card_one{
+    background-color: var(--color-red);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px ;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #000;
+    border: 1px solid red;
+}
+.card_two{
+    background-color: var(--color-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px ;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #000;
+    border: 1px solid blue;
+}
+.card_three{
+    background-color: var(--color-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px ;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #000;
+    border: 1px solid green;
+}
+.card_four{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px ;
+    border-radius: 5px;
+    
+}
+
+.dote::before{
+    content: '.';
+    border-radius: 100%;
+    color: var(--color-red);
+    font-size: 2rem;
+}
+.card_four p{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
