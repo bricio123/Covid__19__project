@@ -1,14 +1,13 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Modal, Button } from "react-bootstrap";
 import ImgUm from "../assets/Group_19.png";
 import "../components/hero.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import iconText from "../components/iconText";
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faPlay, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => (
-  <Container className="my-5 ">
-    <Row xm={3} className="d-flex align-items-center">
+  <Container className="my-5 pt-5">
+    <Row xm={3} className="d-flex align-items-center ">
       <Col className="d-flex flex-column justify-content-center col-lg-4">
         <small>Mais de 188 países são afetados por</small>
         <h1 className="m-0 p-0 display-2">Corona</h1>
@@ -23,18 +22,52 @@ const Hero = () => (
         <Image src={ImgUm} alt="covid" className="hero__img" />
 
         <Col className="play__button text-center d-flex flex-direction-column align-items-center justify-content-center">
-          <Col>
-            <FontAwesomeIcon
-              icon={faPlay}
-              size={"1x"}
-              color={"#fff"}
-              className="btn_play"
-            />
-            <p className="font-size-1">Veja como se proteger</p>
+          <Col className="">
+            <AppShow />
+
+            <p>Veja como se proteger</p>
           </Col>
         </Col>
       </Col>
     </Row>
   </Container>
 );
+
+const ShowApp = (props) => (
+  <Modal
+    {...props}
+    size="lg"
+    aria-labelledby="contained-modal-title-vcenter"
+    centered
+  >
+    <Modal.Header closeButton>
+      <Modal.Title id="contained-modal-title-vcenter" className="text-dark">
+        Entenda!
+      </Modal.Title>
+    </Modal.Header>
+    <Modal.Body className="text-dark">
+      <h4 className="my-2">O que é Dor no Peito?</h4>
+    </Modal.Body>
+    <Modal.Footer>
+      <Button onClick={props.onHide}>Close</Button>
+    </Modal.Footer>
+  </Modal>
+);
+
+function AppShow() {
+  const [modalShow, setModalShow] = React.useState(false);
+
+  return (
+    <>
+      <FontAwesomeIcon
+        onClick={() => setModalShow(true)}
+        icon={faPlay}
+        size="1x"
+        className="btn_play"
+      />
+      <ShowApp show={modalShow} onHide={() => setModalShow(false)} />
+    </>
+  );
+}
+
 export default Hero;

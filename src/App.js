@@ -7,6 +7,8 @@ import Cards from './components/cards';
 import IconSafe from './components/IconSafe';
 import Symptoms from './components/symptoms';
 import News from './components/news';
+import Carousel from './components/carousel';
+
 
 
 
@@ -19,6 +21,7 @@ function App() {
         <IconSafe/>
         <Symptoms/>
         <News/>
+        <Carousel/>
     </div>
   );
 }

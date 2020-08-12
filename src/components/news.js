@@ -16,13 +16,13 @@ const New = () => (
       </Col>
       <Col className="inputs">
         <Form>
-          <Form.Group controlId="formGroupEmail" className="input_form">
+          <Form.Group controlId="formGroupEmail" className="input_form pl-4 ">
             <Form.Control
               type="email"
               placeholder="Seu E-mail.."
-              className="input_send d-flex  d-flex flex-column align-items-center px-4"
+              className="input_send d-flex flex-column align-items-center justify-content-center px-4"
             />
-            <Button  type="submit" className='btn_play mb-2'>
+            <Button  type="submit" className='btn_play mb-3'>
               <FontAwesomeIcon
                 icon={faPaperPlane}
                 size={"1x"}

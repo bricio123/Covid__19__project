@@ -13,10 +13,11 @@
   align-items: center;
   justify-content: center;
 }
+.input_form:hover{
+    box-shadow: 2px 2px 5px 2px #000;
+}
+
 .input_send {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: transparent;
   border-top: 0;
   border-left: 0;
@@ -40,7 +41,6 @@
 .btn_play {
   position: relative;
   left: -50px;
-
   background-color:#FF7033 ;
   border-radius:100%;
   padding: 10px;
