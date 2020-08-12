@@ -1,4 +1,15 @@
-.carousel-indicators ul{
-    display: block !important;
-    color: transparent;
+.carousel{
+    width: 100%;
+    height: 90vh;
+   margin-top: 10rem;
+}
+
+.card_all{
+    width: 40%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
 }

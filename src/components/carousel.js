@@ -1,17 +1,17 @@
 import React from "react";
 import { Container, Row, Col, Carousel, Card, Button } from "react-bootstrap";
-import corona_one from '../assets/corona_one.png';
-import corona_two from '../assets/corona_two.png';
+import corona_one from "../assets/corona_one.png";
+import corona_two from "../assets/corona_two.png";
 
-import './carousel.scss';
+import "./carousel.scss";
 
 const CarouselAll = () => (
-  <Container>
-    <Carousel className='mt-5'>
-      <Carousel.Item >
-        <Card style={{ width: "25rem" }}>
+ 
+    <Carousel className="carousel">
+      <Carousel.Item>
+        <Card className=" card_all bg-transparent text-white">
           <Card.Img src={corona_one} />
-          <Card.Body className='text-dark'>
+          <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>
               Some quick example text to build on the card title and make up the
@@ -23,9 +23,9 @@ const CarouselAll = () => (
       </Carousel.Item>
 
       <Carousel.Item>
-        <Card style={{ width: "18rem" }}>
+        <Card className=" card_all bg-transparent text-white">
           <Card.Img variant="top" src={corona_two} />
-          <Card.Body className='text-dark'>
+          <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>
               Some quick example text to build on the card title and make up the
@@ -37,9 +37,9 @@ const CarouselAll = () => (
       </Carousel.Item>
 
       <Carousel.Item>
-        <Card style={{ width: "18rem" }}>
+        <Card className="card_all bg-transparent text-white">
           <Card.Img variant="top" src={corona_two} />
-          <Card.Body className='text-dark'>
+          <Card.Body className="">
             <Card.Title>Card Title</Card.Title>
             <Card.Text>
               Some quick example text to build on the card title and make up the
@@ -50,6 +50,6 @@ const CarouselAll = () => (
         </Card>
       </Carousel.Item>
     </Carousel>
-  </Container>
+
 );
 export default CarouselAll;
