@@ -6,50 +6,98 @@ import corona_two from "../assets/corona_two.png";
 import "./carousel.scss";
 
 const CarouselAll = () => (
- 
-    <Carousel className="carousel">
-      <Carousel.Item>
-        <Card className=" card_all bg-transparent text-white">
-          <Card.Img src={corona_one} />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+  <Carousel className="carousel d-flex alig-items-center py-5 carousel-inner ">
+    <Carousel.Item>
+      <Row className="d-flex justify-content-center">
+        <Card className="card_all bg-transparent text-white mx-5">
+          <Card.Img src={corona_one} className="rounded img" />
+          <Card.Body className="p-0">
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              <span>Data: 20 , Mar 2020</span>
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Card.Title>
+              Meia Maratona de São Lucas em abril cancelada em meio a
+              preocupações com coronavírus
+            </Card.Title>
+            <Card.Text>
+              A Meia Maratona de São Lucas, programada para abril, foi cancelada
+              este ano como parte dos esforços contínuos para diminuir a
+              propagação do coronavírus, anunciaram os organizadores na
+              segunda-feira.
+            </Card.Text>
           </Card.Body>
         </Card>
-      </Carousel.Item>
+      </Row>
+    </Carousel.Item>
 
-      <Carousel.Item>
-        <Card className=" card_all bg-transparent text-white">
-          <Card.Img variant="top" src={corona_two} />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+    <Carousel.Item>
+      <Row className="d-flex justify-content-center">
+        <Card className="card_all bg-transparent text-white mx-5">
+          <Card.Img variant="top" src={corona_two} className="rounded img" />
+          <Card.Body className="p-0">
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              <span>Data: 20 , Mar 2020</span>
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Card.Title>
+              Meia Maratona de São Lucas em abril cancelada em meio a
+              preocupações com coronavírus
+            </Card.Title>
+            <Card.Text>
+              A Meia Maratona de São Lucas, programada para abril, foi cancelada
+              este ano como parte dos esforços contínuos para diminuir a
+              propagação do coronavírus, anunciaram os organizadores na
+              segunda-feira.
+            </Card.Text>
           </Card.Body>
         </Card>
-      </Carousel.Item>
+      </Row>
+    </Carousel.Item>
 
-      <Carousel.Item>
-        <Card className="card_all bg-transparent text-white">
-          <Card.Img variant="top" src={corona_two} />
-          <Card.Body className="">
-            <Card.Title>Card Title</Card.Title>
+    <Carousel.Item>
+      <Row className="d-flex justify-content-center">
+        <Card className="card_all bg-transparent text-white mx-5">
+          <Card.Img src={corona_one} className="rounded img" />
+          <Card.Body className="p-0">
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              <span>Data: 20 , Mar 2020</span>
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Card.Title>
+              Meia Maratona de São Lucas em abril cancelada em meio a
+              preocupações com coronavírus
+            </Card.Title>
+            <Card.Text>
+              A Meia Maratona de São Lucas, programada para abril, foi cancelada
+              este ano como parte dos esforços contínuos para diminuir a
+              propagação do coronavírus, anunciaram os organizadores na
+              segunda-feira.
+            </Card.Text>
           </Card.Body>
         </Card>
-      </Carousel.Item>
-    </Carousel>
+      </Row>
+    </Carousel.Item>
 
+    <Carousel.Item>
+      <Row className="d-flex justify-content-center">
+        <Card className="card_all bg-transparent text-white mx-5">
+          <Card.Img variant="top" src={corona_two} className="rounded img" />
+          <Card.Body className="p-0">
+            <Card.Text>
+              <span>Data: 20 , Mar 2020</span>
+            </Card.Text>
+            <Card.Title>
+              Meia Maratona de São Lucas em abril cancelada em meio a
+              preocupações com coronavírus
+            </Card.Title>
+            <Card.Text>
+              A Meia Maratona de São Lucas, programada para abril, foi cancelada
+              este ano como parte dos esforços contínuos para diminuir a
+              propagação do coronavírus, anunciaram os organizadores na
+              segunda-feira.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </Row>
+    </Carousel.Item>
+  </Carousel>
 );
 export default CarouselAll;

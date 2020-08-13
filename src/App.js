@@ -8,7 +8,8 @@ import IconSafe from './components/IconSafe';
 import Symptoms from './components/symptoms';
 import News from './components/news';
 import Carousel from './components/carousel';
-
+import Effected from './components/effected';
+import Footer  from './components/footer';
 
 
 
@@ -22,6 +23,8 @@ function App() {
         <Symptoms/>
         <News/>
         <Carousel/>
+        <Effected/>
+        <Footer/>
     </div>
   );
 }

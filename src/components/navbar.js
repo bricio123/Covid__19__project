@@ -12,6 +12,7 @@ import {
   Button,
   OverlayTrigger,
   Popover,
+  
 } from "react-bootstrap";
 //importação das variáveis
 import "../_variables.scss";

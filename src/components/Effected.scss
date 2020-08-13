@@ -1,0 +1,19 @@
+.flag__brazil {
+  padding: 10px;
+  background: linear-gradient(#01b30a, #ffff00);
+  border-radius: 100%;
+
+  position: relative;
+  top: -18rem;
+  right: -23rem;
+}
+.flag__brazil:hover {
+  opacity: 0.5;
+}
+.country_img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+}
