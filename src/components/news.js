@@ -22,12 +22,8 @@ const New = () => (
               placeholder="Seu E-mail.."
               className="input_send d-flex flex-column align-items-center justify-content-center px-4"
             />
-            <Button  type="submit" className='btn_play mb-3'>
-              <FontAwesomeIcon
-                icon={faPaperPlane}
-                size={"1x"}
-                color={"#fff"}
-              />
+            <Button type="submit" className="btn_play mb-3">
+              <FontAwesomeIcon icon={faPaperPlane} size={"1x"} color={"#fff"} />
             </Button>
           </Form.Group>
         </Form>

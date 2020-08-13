@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import '../components/cards.scss';
+import "../components/cards.scss";
 
 const card = () => (
   <Container>
-    <Row  className='py-5 ' >
-      <Col className="card_one"  >
+    <Row className="py-5 ">
+      <Col className="card_one">
         <h3>3,17,309 +</h3>
         <small>Total de casos</small>
       </Col>
@@ -18,8 +18,8 @@ const card = () => (
         <small>Total de record</small>
       </Col>
       <Col className="card_four">
-        <h5 className=''>
-          <span className='dote'></span> Atualização ao vivo
+        <h5 className="">
+          <span className="dote"></span> Atualização ao vivo
         </h5>
         <strong>Brasil fechou as fronteiras</strong>
         <p>

@@ -12,7 +12,6 @@ import {
   Button,
   OverlayTrigger,
   Popover,
-  
 } from "react-bootstrap";
 //importação das variáveis
 import "../_variables.scss";
@@ -20,26 +19,30 @@ import "../_variables.scss";
 import "./navbar.scss";
 
 const navbar = () => (
-  <div className='fixed-top color__background'>
-    <div className="collapse text-center" id="navbarToggleExternalContent"  >
+  <div className="fixed-top color__background">
+    <div className="collapse text-center" id="navbarToggleExternalContent">
       <Navbar>
         <Navbar.Brand href="#home">
           <Col className="text-right p-3">
-            <strong  className='text-light'>
+            <strong className="text-light">
               Covid-<span className="text-warning">19</span>
             </strong>
           </Col>
         </Navbar.Brand>
-        <Nav className='mr-auto font-weight-light'>
+        <Nav className="mr-auto font-weight-light">
           <Nav.Link className="text-light">Inicio</Nav.Link>
-          <Nav.Link  className="text-light">Numero de Casos</Nav.Link>
+          <Nav.Link className="text-light">Numero de Casos</Nav.Link>
           <Nav.Link className="text-light">Cuidados</Nav.Link>
           <Nav.Link className="text-light">Sintomas</Nav.Link>
           <Nav.Link className="text-light">Contato</Nav.Link>
           <Nav.Link className="text-light">Blog</Nav.Link>
         </Nav>
         <Form inline>
-          <FormControl type="text" placeholder="Procurar..." className="mr-sm-2" />
+          <FormControl
+            type="text"
+            placeholder="Procurar..."
+            className="mr-sm-2"
+          />
           <Button>Pesquisar</Button>
         </Form>
       </Navbar>

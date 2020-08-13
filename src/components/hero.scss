@@ -11,8 +11,8 @@
   cursor: pointer;
 }
 .btn_play:hover {
-  opacity: .5;
-  transition: .5s;
+  opacity: 0.5;
+  transition: 0.5s;
 }
 .play__button .svg-inline--fa {
   color: #ffffff;
@@ -23,16 +23,13 @@
   border-radius: 100%;
 }
 
-
 @keyframes video {
   from {
-
     opacity: 0;
     transform: RotateX(-5%);
   }
   to {
     transform: RotateX(50%);
     opacity: 1;
-    
   }
 }

@@ -9,35 +9,34 @@
   font-weight: 100;
   color: #fff;
   outline: unset;
-  
 }
-.img__circle{
-    top: -50px;
-   
-    position: absolute;
-    animation: infinite;
-    animation-name: rotate;
-    animation-duration: 5s ;
-    
+.img__circle {
+  top: -50px;
+
+  position: absolute;
+  animation: infinite;
+  animation-name: rotate;
+  animation-duration: 5s;
 }
-@keyframes rotate{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg)
-    }
-}
-.nurse__img{
-    display: flex;
-    margin: 0 auto;
-    width: 500px;
-    
-}
-.icons__symptoms:hover,:active,:focus, :empty {
-    outline: unset;
- 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.nurse__img {
+  display: flex;
+  margin: 0 auto;
+  width: 500px;
+}
+.icons__symptoms:hover,
+:active,
+:focus,
+:empty {
+  outline: unset;
+}
 .icons__symptons:hover {
   text-shadow: 2px 1px 2px solid #000;
   background: purple;

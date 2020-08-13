@@ -13,8 +13,8 @@
   align-items: center;
   justify-content: center;
 }
-.input_form:hover{
-    box-shadow: 2px 2px 5px 2px #000;
+.input_form:hover {
+  box-shadow: 2px 2px 5px 2px #000;
 }
 
 .input_send {
@@ -26,14 +26,14 @@
   outline: none;
   width: 100vw;
   padding: 20px 0;
-  color:#fff;
+  color: #fff;
 }
-.input_send:focus{
+.input_send:focus {
   background: transparent;
-  color:#fff;
+  color: #fff;
 }
-.input_send:active:focus{
-    outline: none;
+.input_send:active:focus {
+  outline: none;
 }
 .input_send::-webkit-input-placeholder {
   color: #fff;
@@ -41,9 +41,8 @@
 .btn_play {
   position: relative;
   left: -50px;
-  background-color:#FF7033 ;
-  border-radius:100%;
+  background-color: #ff7033;
+  border-radius: 100%;
   padding: 10px;
   width: 80px;
-
 }
